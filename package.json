@@ -21,5 +21,7 @@
     "@babel/preset-env": "^7.16.11",
     "graphql-yoga": "^1.18.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^0.26.0"
+  }
 }
