@@ -1,0 +1,25 @@
+{
+  "name": "movieql",
+  "version": "1.0.0",
+  "description": "Movie API with Graphql",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --exec ./node_modules/.bin/babel-node index.js"
+  },
+  "repository": "https://github.com/EavanK/movieql.git",
+  "author": "Hyunsu Eavan Kim <eavan.hsk@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EavanK/movieql/issues"
+  },
+  "homepage": "https://github.com/EavanK/movieql#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.3",
+    "@babel/core": "^7.17.5",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "graphql-yoga": "^1.18.3"
+  },
+  "dependencies": {}
+}
