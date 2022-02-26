@@ -6,4 +6,8 @@ const server = new GraphQLServer({
   resolvers,
 });
 
-server.start(() => console.log("Graphql Server Running on localhost:4000"));
+const port = process.env.PORT || 4000;
+
+server.start(port, () =>
+  console.log("Graphql Server Running on http://localhost:4000")
+);
