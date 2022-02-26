@@ -1,13 +1,14 @@
-import { GraphQLServer } from "graphql-yoga";
+import { ApolloServer } from "apollo-server";
 import resolvers from "./graphql/resolvers.js";
+import typeDefs from "./graphql/schema.js";
 
-const server = new GraphQLServer({
-  typeDefs: "graphql/schema.graphql",
+const server = new ApolloServer({
+  typeDefs,
   resolvers,
 });
 
-const PORT = process.env.PORT || 4000;
+const port = process.env.PORT || 4000;
 
-server.start(PORT, () =>
-  console.log("Graphql Server Running on http://localhost:4000")
-);
+server
+  .listen({ port })
+  .then(({ url }) => console.log(`🚀  Server ready at ${url}`));
